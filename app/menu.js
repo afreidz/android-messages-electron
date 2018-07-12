@@ -2,7 +2,11 @@ const { Menu } = require('electron')
 
 const template = [{
   label: 'Android Messages',
-  submenu: [{ role: 'quit' }]
+  submenu: [
+    { role: 'about' },
+    { type: 'separator' },
+    { role: 'quit' }
+  ]
 },{
   label: 'Edit',
   submenu: [
