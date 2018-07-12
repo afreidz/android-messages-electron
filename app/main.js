@@ -47,8 +47,3 @@ app.on('window-all-closed', () => {
 app.on('activate', () => {
   if (win === null) return createWindow()
 })
-app.on('certificate-error', (event, webContents, url, error, certificate, callback) => {
-  console.log('cert error occurred')
-  event.preventDefault()
-  return callback(true)
-})
