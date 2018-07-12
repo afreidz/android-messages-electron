@@ -12,7 +12,7 @@
   "author": "AFreidz",
   "license": "ISC",
   "dependencies": {
-    "electron": "^2.0.3",
+    "electron": "^2.0.4",
     "electron-builder": "^20.16.0"
   }
 }
