@@ -1,7 +1,7 @@
 const os = require('os')
 const path = require('path')
 const MainMenu = require('./menu')
-const { app, BrowserWindow, ipcMain, autoUpdater } = require('electron')
+const { app, BrowserWindow, ipcMain, autoUpdater, dialog } = require('electron')
 
 let platform = `${os.platform()}_${os.arch()}`
 let version = app.getVersion()
@@ -25,6 +25,7 @@ function createWindow () {
 
   autoUpdater.setFeedURL(updateURL)
   autoUpdater.checkForUpdates()
+
   autoUpdater.on('update-downloaded', (event, releaseNotes, releaseName) => {
     const dialogOpts = {
       type: 'info',

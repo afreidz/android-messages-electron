@@ -1,12 +1,13 @@
 {
   "name": "android-messages-electron",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Electron App for Android Messages",
   "main": "./app/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx electron ./app",
-    "build": "npx electron-builder -m --config ./build/build.json"
+    "build": "npx electron-builder -m --config ./build/build.json",
+    "postinstall": "electron-builder install-app-deps"
   },
   "author": "AFreidz",
   "license": "ISC",
