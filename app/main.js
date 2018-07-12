@@ -48,3 +48,9 @@ app.on('window-all-closed', () => {
 app.on('activate', () => {
   if (win === null) return createWindow()
 })
+
+app.on('certificate-error', e => {
+  let cb = Array.prototype.slice(arguments).pop()
+  e.preventDefault()
+  cb(true)
+})
