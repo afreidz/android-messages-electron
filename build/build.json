@@ -1,0 +1,10 @@
+{
+  "appId": "com.afreidz.android-messages",
+  "productName": "Android Messages",
+  "forceCodeSigning": false,
+  "mac": {
+    "icon": "build/icon.icns",
+    "target": ["dmg", "zip"],
+    "artifactName": "${productName}-${version}-${os}.${ext}"
+  }
+}

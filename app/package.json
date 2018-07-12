@@ -1,0 +1,11 @@
+{
+  "name": "android-messages",
+  "version": "1.0.1",
+  "description": "Android Messages",
+  "main": "./main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grainger",
+  "license": "ISC"
+}
